@@ -10,11 +10,12 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.CartasHolder> {
-    private List<ImageView> Cartas;
-    public AdapterCartas (List<ImageView> cartas){
+    private  ArrayList<ImageView> Cartas;
+    public AdapterCartas (ArrayList<ImageView> cartas){
         Cartas = cartas;
     }
     @NonNull

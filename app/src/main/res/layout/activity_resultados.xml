@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resultados"
+    android:background="#ABDEE1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="#1D5F79"
+        android:paddingVertical="5dp"
+        android:id="@+id/linearenc">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="3dp"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:padding="2dp"
+            android:text="Nombre"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_margin="3dp"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:padding="2dp"
+            android:text="Puntuación"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvresultados"
+        android:layout_below="@id/linearenc">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

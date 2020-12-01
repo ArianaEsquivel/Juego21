@@ -1009,6 +1009,7 @@ id left
 id line1
 id line3
 id linear
+id linearenc
 id listMode
 id list_item
 id message
@@ -1016,11 +1017,13 @@ id middle
 id motion_base
 id multiply
 id never
+id nombre
 id none
 id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numero
 id off
 id on
 id packed
@@ -1039,12 +1042,14 @@ id puntuacion
 id radio
 id ratio
 id rectangles
+id restaurar
 id resultados
 id reverseSawtooth
 id right
 id right_icon
 id right_side
 id rvcartas
+id rvresultados
 id sawtooth
 id screen
 id scrollIndicatorDown
@@ -1157,8 +1162,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_resultados
 layout custom_dialog
 layout lista_cartas
+layout lista_resultados
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

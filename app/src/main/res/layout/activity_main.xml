@@ -9,8 +9,8 @@
     android:background="#ABDEE1"
     android:gravity="center_vertical">
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:id="@+id/rvcartas">
     </androidx.recyclerview.widget.RecyclerView>
     <TextView
@@ -18,7 +18,10 @@
         android:layout_height="wrap_content"
         android:background="#ABDEE1"
         android:fontFamily="monospace"
-        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:textSize="45dp"
+        android:text="Bienvenido🤠"
+        android:layout_centerHorizontal="true"
         android:id="@+id/puntuacion"
         android:layout_below="@id/rvcartas"/>
     <Button
@@ -57,6 +60,19 @@
         android:onClick="resultados"
         android:id="@+id/resultados"
         android:layout_below="@id/enumero"
+        android:layout_margin="5dp"
+        android:background="#1D5F79"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="REINICIAR"
+        android:textColor="#FFF"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:onClick="restaurar"
+        android:id="@+id/restaurar"
+        android:layout_below="@id/resultados"
         android:layout_margin="5dp"
         android:background="#1D5F79"
         />
