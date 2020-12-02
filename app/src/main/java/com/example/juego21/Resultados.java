@@ -24,7 +24,6 @@ import java.util.List;
 
 public class Resultados extends AppCompatActivity {
     private RecyclerView RvListaResultados;
-    private List<ListResultados> Resultados;
     private RequestQueue cartero;
 
     @Override
@@ -54,6 +53,7 @@ public class Resultados extends AppCompatActivity {
                     List<ListResultados> resultados = convertidor.fromJson(lista_resultados.toString(), tipoListaResultado);
                     AdapterResultados mAdapter = new AdapterResultados(resultados);
                     RvListaResultados.setAdapter(mAdapter);
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();

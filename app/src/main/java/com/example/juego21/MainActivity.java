@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private int total;
     private boolean enviado = false;
     private Intent resultados;
+    private AdapterCartas adapterCartas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         cartero = VolleySingleton.getInstance(getApplicationContext()).getRequestQueue();
         num = findViewById(R.id.puntuacion);
         resultados = new Intent(this, Resultados.class);
+        adapterCartas = new AdapterCartas(lista);
     }
 
 
@@ -128,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
                     ncarta.setImageDrawable(getDrawable(img));
                     num.setText(String.valueOf(total));
                     lista.add(ncarta);
-                    AdapterCartas adapterCartas = new AdapterCartas(lista);
                     RvListaCartas.setAdapter(adapterCartas);
 
                     if (total > 21){
@@ -198,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
         lista.clear();
         total = 0;
         num.setText("Bienvenido🤠");
-        AdapterCartas adapterCartas = new AdapterCartas(lista);
         RvListaCartas.setAdapter(adapterCartas);
         enviado = false;
     }
